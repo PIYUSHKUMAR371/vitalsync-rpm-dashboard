@@ -7,6 +7,16 @@ VitalSync is a clinical Remote Patient Monitoring (RPM) web application built wi
 
 ---
 
+## Screenshots
+
+### Remote Monitoring Command Center & 24-Hour Telemetry
+![VitalSync Remote Monitoring Command Center](./screenshots/dashboard-overview.png)
+
+### Monitored Patient Directory & Filter Tags
+![VitalSync Monitored Patient Directory](./screenshots/patient-directory.png)
+
+---
+
 ## Clinical & UX Design Focus
 
 In remote patient care, clinicians monitor multiple patients at once and cannot afford to hunt through raw logs or suffer from alert fatigue when a vital sign crosses a dangerous threshold. VitalSync is structured around rapid triage and visual hierarchy:
@@ -63,9 +73,12 @@ vitalsync/
 ├── components/
 │   ├── VitalsSummaryBar.tsx        # Top command header, KPI cards & alert simulator
 │   ├── AlertTriageFeed.tsx         # Color-coded Critical / Warning / Stable alert list
-│   ├── VitalTrendChart.tsx         # Interactive 24h Recharts telemetry & metric cards
+│   ├── VitalTrendChart.tsx       # Interactive 24h Recharts telemetry & metric cards
 │   └── PatientDirectory.tsx        # Searchable patient roster & tag filters
 ├── data/
 │   └── mockVitalsData.ts           # Initial monitored patients, 24h series & alerts
+├── screenshots/
+│   ├── dashboard-overview.png      # Command center & 24h chart screenshot
+│   └── patient-directory.png       # Patient directory & filter tags screenshot
 └── types/
     └── index.ts                    # TypeScript interfaces & types
